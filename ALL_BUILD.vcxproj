@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64A9407F-DBCC-32CF-848A-39B3DDA48640}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1 -BD:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/build --check-stamp-file D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/CMakeLists.txt;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\CMakeLists.txt;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeCCompiler.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\TestBigEndian.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\Macros.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\FindJThread.cmake;D:\VisualStudioPrj\JRTP\local\lib\cmake\JThread\JThreadConfig.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\FindLIBSRTP.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtptypes.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtpconfig.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtplibraryversioninternal.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\JRTPLIBConfig.cmake.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1 -BD:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/build --check-stamp-file D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/VisualStudioPrj/JRTP/jrtplib-3.11.1/jrtplib-3.11.1/CMakeLists.txt;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\CMakeLists.txt;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeCCompiler.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\3.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\TestBigEndian.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\Macros.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\FindJThread.cmake;D:\VisualStudioPrj\JRTP\local\lib\cmake\JThread\JThreadConfig.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\FindLIBSRTP.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindPackageMessage.cmake;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtptypes.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtpconfig.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\src\rtplibraryversioninternal.h.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\cmake\JRTPLIBConfig.cmake.in;D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\ZERO_CHECK.vcxproj">
+      <Project>{F6B3520C-BE18-311F-BDBE-F3D89058215F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example1.vcxproj">
+      <Project>{07A71AB3-245E-3822-8BB8-B2EF1A0A8C0A}</Project>
+      <Name>example1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example2.vcxproj">
+      <Project>{855C8842-3531-3848-9125-20FC2D5D8E57}</Project>
+      <Name>example2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example3.vcxproj">
+      <Project>{7CB64612-82FB-36E1-B396-E7560206F9E9}</Project>
+      <Name>example3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example4.vcxproj">
+      <Project>{21CD74E0-1837-3AB8-9D20-F9A1B553270B}</Project>
+      <Name>example4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example5.vcxproj">
+      <Project>{1760021B-525D-3A69-8D04-D1B8AB45ACFD}</Project>
+      <Name>example5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example6.vcxproj">
+      <Project>{2A8E6FE9-E070-3703-A5A8-353D638D46E3}</Project>
+      <Name>example6</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example7.vcxproj">
+      <Project>{96F4D46F-201F-3163-8BB2-ED8AC21C82BE}</Project>
+      <Name>example7</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\examples\example8.vcxproj">
+      <Project>{80C73570-DE00-3174-B39E-76EEFE606853}</Project>
+      <Name>example8</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudioPrj\JRTP\jrtplib-3.11.1\jrtplib-3.11.1\build\src\jrtplib-static.vcxproj">
+      <Project>{DF6D05D7-36D3-3006-87C2-47D811062C62}</Project>
+      <Name>jrtplib-static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
